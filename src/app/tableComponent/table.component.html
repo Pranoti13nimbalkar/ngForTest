@@ -1,0 +1,315 @@
+
+
+<h2>Employee information</h2>
+<table class="table table-bordered table-responsive">
+    <thead>
+        <tr>
+            <th>Sr. No.</th>
+            <th>Employee Name</th>
+            <th>Employee Id</th>
+            <th>designation</th>
+            <th>department</th>
+            <th>email</th>
+            <th>contact</th>
+            <th>salary</th>
+            <th>isPermanent</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let emp of empArr; let i = index">
+             <td>{{i+1}}</td>
+            <td>{{emp.empName}}</td> 
+            <td>{{emp.empId}}</td>
+            <td>{{emp.designation}}</td>
+            <td>{{emp.department}}</td>
+            <td>{{emp.email}}</td>
+            <td>{{emp.contact}}</td>
+            <td>{{emp.salary}}</td>
+            <td>{{emp.isPermanent? "yes" : "No"}}</td> 
+         </tr>
+    </tbody>
+</table>
+
+
+<hr>
+
+<h2>student information</h2>
+<table class="table table-bordered table-responsive">
+    <thead>
+        <tr>
+            <th>Sr. No.</th>
+            <th>rollNo</th>
+            <th>Name</th>
+            <th> course</th>
+            <th>year</th>
+            <th>percentage</th>
+            <th>isPassed</th>
+            <th>email</th>
+            <th>contact</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let std of studentArr; let i = index">
+             <td>{{i+1}}</td>
+            <td>{{std.rollNo}}</td> 
+            <td>{{std.name}}</td>
+            <td>{{std.course}}</td>
+            <td>{{std.year}}</td>
+            <td>{{std.percentage}}</td>
+            <td>{{std.isPassed? "pass" : "fail"}}</td>
+            <td>{{std.email}}</td>
+            <td>{{std.contact}}</td> 
+         </tr>
+    </tbody>
+</table>
+
+<hr>
+
+<h2>3) Product information</h2>
+<table class="table table-bordered table-responsive">
+    <thead>
+        <tr>
+            <th>Sr. No.</th>
+            <th>prodId</th>
+            <th>product Name</th>
+            <th> category</th>
+            <th>price</th>
+            <th>stock</th>
+            <th>isAvailable</th>
+            <th>brand</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let prod of productArr; let i = index">
+             <td>{{i+1}}</td>
+            <td>{{prod.prodId}}</td> 
+            <td>{{prod.prodName}}</td>
+            <td>{{prod.category}}</td>
+            <td>{{prod.price}}</td>
+            <td>{{prod.stock}}</td>
+            <td>{{prod.isAvailable? "Available" : "Out of stock"}}</td>
+            <td>{{prod.brand}}</td>
+         </tr>
+    </tbody>
+</table>
+
+
+
+    <hr>
+    
+<h2>4)Course information</h2>
+<table class="table table-bordered table-responsive">
+    <thead>
+        <tr>
+            <th>Sr. No.</th>
+            <th>course Id</th>
+            <th>course Name</th>
+            <th> Duration</th>
+            <th>Fees</th>
+            <th>Mode</th>
+            <th>IsActive</th>
+            <th>trainer</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let course of courseArr; let i = index">
+             <td>{{i+1}}</td>
+            <td>{{course.courseId}}</td> 
+            <td>{{course.courseName}}</td>
+            <td>{{course.duration}}</td>
+            <td>{{course.fees}}</td>
+            <td>{{course.mode}}</td>
+            <td>{{course.isActive? "Active" : "InActive"}}</td>
+            <td>{{course.trainer}}</td>
+         </tr>
+    </tbody>
+</table>
+
+
+
+       
+<h2>5)Book information</h2>
+<table class="table table-bordered table-responsive">
+    <thead>
+        <tr>
+            <th>Sr. No.</th>
+            <th>Book Id</th>
+            <th>Title</th>
+            <th> Author</th>
+            <th>Price</th>
+            <th>Pages</th>
+            <th>IsAvailable</th>
+            <th>Genre</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let book of bookArr; let i = index">
+             <td>{{i+1}}</td>
+            <td>{{book.bookId}}</td> 
+            <td>{{book.title}}</td>
+            <td>{{book.author}}</td>
+            <td>{{book.price}}</td>
+            <td>{{book.pages}}</td>
+            <td>{{book.isAvailable? "yes" : "no"}}</td>
+            <td>{{book.genre}}</td>
+         </tr>
+    </tbody>
+</table>
+<hr>
+     
+<h2>6)Customer information</h2>
+<table class="table table-bordered table-responsive">
+    <thead>
+        <tr>
+            <th>Sr. No.</th>
+            <th>Customer Id</th>
+            <th>Name</th>
+            <th>City</th>
+            <th>Age</th>
+            <th>Email</th>
+            <th>IsPrime</th>
+            <th>contact</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let costemer of customerArr; let i = index">
+             <td>{{i+1}}</td>
+            <td>{{costemer.custId}}</td> 
+            <td>{{costemer.name}}</td>
+            <td>{{costemer.city}}</td>
+            <td>{{costemer.age}}</td>
+            <td>{{costemer.email}}</td>
+            <td>{{costemer.isPrime? "yes" : "no"}}</td>
+            <td>{{costemer.contact}}</td>
+         </tr>
+    </tbody>
+</table>
+<hr>
+ 
+
+        
+<h2>7)Order information</h2>
+<table class="table table-bordered table-responsive">
+    <thead>
+        <tr>
+            <th>Sr. No.</th>
+            <th>Order Id</th>
+            <th> Customer Name</th>
+            <th>Product</th>
+            <th>Amount</th>
+            <th>Status</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let order of orderArr; let i = index">
+             <td>{{i+1}}</td>
+            <td>{{order.orderId}}</td> 
+            <td>{{order.customerName}}</td>
+            <td>{{order.product}}</td>
+            <td>{{order.amount}}</td>
+            <td>{{order.status}}</td>
+            <td>{{order.date}}</td>
+         </tr>
+    </tbody>
+</table>
+<hr>
+            
+<h2>8)Movies information</h2>
+<table class="table table-bordered table-responsive">
+    <thead>
+        <tr>
+            <th>Sr. No.</th>
+            <th>Movie Id</th>
+            <th> Title</th>
+            <th>Genre</th>
+            <th>Rating</th>
+            <th>ReleaseYear</th>
+            <th>IsHit</th>
+            <th>language</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let movie of movieArr; let i = index">
+             <td>{{i+1}}</td>
+            <td>{{movie.movieId}}</td> 
+            <td>{{movie.title}}</td>
+            <td>{{movie.genre}}</td>
+            <td>{{movie.rating}}</td>
+            <td>{{movie.releaseYear}}</td>
+            <td>{{movie.isHit? "Hit" : "Flop"}}</td>
+            <td>{{movie.language}}</td>
+
+         </tr>
+    </tbody>
+</table>
+ 
+<hr>
+
+    <h2>9)Teacher information</h2>
+<table class="table table-bordered table-responsive">
+    <thead>
+        <tr>
+            <th>Sr. No.</th>
+            <th>Teacher Id</th>
+            <th> Name</th>
+            <th>Subject</th>
+            <th>Experience</th>
+            <th>Salary</th>
+            <th>IsFullTime</th>
+            <th>email</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let tracher of teacherArr; let i = index">
+             <td>{{i+1}}</td>
+            <td>{{tracher.teacherId}}</td> 
+            <td>{{tracher.name}}</td>
+            <td>{{tracher.subject}}</td>
+            <td>{{tracher.experience}}</td>
+            <td>{{tracher.salary}}</td>
+            <td>{{tracher.isFullTime? "yes" : "no"}}</td>
+            <td>{{tracher.email}}</td>
+
+
+         </tr>
+    </tbody>
+</table>
+<hr>
+
+ <h2>10)Vehicle information</h2>
+<table class="table table-bordered table-responsive">
+    <thead>
+        <tr>
+            <th>Sr. No.</th>
+            <th>Vehicle Id</th>
+            <th> Brand</th>
+            <th>Model</th>
+            <th>Type</th>
+            <th>Price</th>
+            <th>IsAvailable</th>
+            <th>fuel</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let vehicle of vehicleArr; let i = index">
+             <td>{{i+1}}</td>
+            <td>{{vehicle.vehicleId}}</td> 
+            <td>{{vehicle.brand}}</td>
+            <td>{{vehicle.model}}</td>
+            <td>{{vehicle.type}}</td>
+            <td>{{vehicle.price}}</td>
+            <td>{{vehicle.isAvailable? "yes" : "no"}}</td>
+            <td>{{vehicle.fuel}}</td>
+         </tr>
+    </tbody>
+</table>
+
+<hr>
+<h2 class="text-danger m-2">Table Component Ends here....</h2>
+<hr>
+

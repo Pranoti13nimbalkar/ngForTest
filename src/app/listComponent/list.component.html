@@ -1,0 +1,98 @@
+
+<p class="bg-dark text-white p-2">{{ productsText}}</p>
+<ul class="list-group">
+    <li *ngFor="let prod of products"
+    class="list-group-item">
+      <strong>{{prod}}</strong>
+    </li>
+</ul>
+<hr>
+
+
+<p class="bg-dark text-white p-2">{{fruitsText }}</p>
+<ul class="list-group">
+    <li *ngFor="let fruit of fruits"
+    class="list-group-item">
+     I like <strong class="text-danger">{{fruit}}</strong>.
+    </li>
+</ul>
+<hr>
+
+
+<p class="bg-dark text-white p-2">{{colorsText }}</p>
+<ul class="list-group">
+    <li *ngFor="let color of colors"
+    class="list-group-item">
+    I want to give <strong class="text-info">{{color}} </strong> color.
+    </li>
+</ul>
+<hr>
+
+
+<p class="bg-dark text-white p-2">{{citiesText }}</p>
+<ul class="list-group">
+    <li *ngFor="let citiy of cities"
+    class="list-group-item">
+   I would like to go <strong class="bg-primary text-dark"><i>{{citiy}}</i> </strong> 
+    </li>
+</ul>
+<hr>
+
+<p class="bg-dark text-white p-2">{{subjectsText }}</p>
+<ul class="list-group">
+    <li *ngFor="let subject of subjects"
+    class="list-group-item">
+   I would like  to learn <strong ><i>{{subject}}</i> </strong> subject.
+    </li>
+</ul>
+<hr>
+
+<p class="bg-dark text-white p-2">{{vehiclesText }}</p>
+<ul class="list-group">
+    <li *ngFor="let vehicle of vehicles"
+    class="list-group-item">
+    <strong class="bg-success">{{vehicle}}</strong>.
+    </li>
+</ul>
+<hr>
+
+<p class="bg-warning text-danger p-2">{{animalsText }}</p>
+<ul class="list-group">
+    <li *ngFor="let animal of animals"
+    class="list-group-item">
+    <strong class="text-success">{{animal}}</strong>.
+    </li>
+</ul>
+<hr>
+
+
+<p class="bg-warning text-danger p-2">{{sportsText }}</p>
+<ul class="list-group">
+    <li *ngFor="let sport of sports"
+    class="list-group-item">
+   I want to play <strong class="text-secondary">{{sport}}</strong>.
+    </li>
+</ul>
+<hr>
+
+<p class="bg-warning text-danger p-2">{{countriesText }}</p>
+<ul class="list-group">
+    <li *ngFor="let countrie of countries"
+    class="list-group-item">
+   I like <strong class="text-white bg-dark">{{countrie}}</strong>.
+    </li>
+</ul>
+<hr>
+
+
+<p class="bg-warning text-danger p-2">{{languagesText }}</p>
+<ul class="list-group">
+    <li *ngFor="let language of languages"
+    class="list-group-item">
+   I would like to speak  <strong class="text-danger">{{language}}</strong> language.
+    </li>
+</ul>
+
+<h2 class="text-danger m-2">List Component Ends here....</h2>
+<hr>
+
